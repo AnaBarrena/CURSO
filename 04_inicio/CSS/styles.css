@@ -1,0 +1,8 @@
+h1, p ¨{
+   display: inline;
+}
+
+strong  {
+    font-weight: normal;
+        display: block;
+}
