@@ -1,1 +1,1 @@
-console.log('Hola desde un fichero JS')
+console.log('Hola desde un fichero js')
