@@ -1,1 +1,1 @@
-console.log('Hola Amigos desde index.html')
+console.log('Hola desde un fichero js')
