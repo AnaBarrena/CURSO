@@ -6,3 +6,17 @@ strong  {
     font-weight: normal;
         display: block;
 }
+/* #p001 {
+    color: brown
+}*/
+
+.destacado{
+    color: brown
+     text-align: center
+}
+img {
+    text-align: center;
+}
+.centrado {
+   text-align:  center 
+}
