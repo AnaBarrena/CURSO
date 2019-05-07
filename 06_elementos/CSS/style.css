@@ -63,3 +63,6 @@ ol {
 .clearfix {
     clear: both;
 }
+footer a {
+    color: inherit
+}
