@@ -64,5 +64,15 @@ ol {
     clear: both;
 }
 footer a {
-    color: inherit
+    color: inherit;
 }
+.main_footer p {
+    margin-bottom: 0;
+}
+.verde {
+    color: green;
+    font-weight: bold;
+}
+/* strong {
+    font-weight: normal
+}*/

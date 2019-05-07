@@ -10,10 +10,10 @@
 <body>
  <header class="main_header">
      <h1>Etiquetas de HTML</h1>
-     <P>Clasificación de las etiquetas según el estándar HTML 5</P>
+     <P>Clasificación de las <strong>etiquetas</strong> según el <strong>estándar HTML 5</strong></P>
  </header>
  <div class="content_wrapper">
-    <p>El estándar diferencia inicialmente tres tipos diferentes de etiquetas: <span lang="en" >Sections, Grouping content y Text-Level Semantics</span> </p>
+    <p>El estándar de <abbr title="HyperText Markup Language">HTML</abbr><a href=""></a> diferencia inicialmente tres tipos de <strong>etiquetas</strong>: <span lang="en" >Sections, Grouping content y Text-Level Semantics</span> </p>
     <section id= "sections_elements">
         <header>
             <h2 lang="en" >Sections Elements</h2>
@@ -151,6 +151,18 @@
             <dt>Bolígrafo BIC</dt><dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ratione obcaecati mollitia tempore maiores quaerat tempora expedita cupiditate numquam ab dolores esse impedit quasi et velit, harum laboriosam sunt exercitationem!</dd>
             <dt>Pilots</dt><dd>Voluptas, modi. Soluta id quas libero perspiciatis ipsum, cupiditate vel, nostrum obcaecati est similique, vero voluptatem ipsam minus nisi illum ratione eum.Lorem ipsum dolor sit amet consectetur adipisicing elit. </dd>
         </dl>
+        <p>Hay algunos atributos específicos de las listas</p>
+        <ol start="5">
+            <li>Item</li>
+            <li>Item</li>
+        </ol>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ol>
     </section>
     <section>
         <h3>Bloques neutros</h3>
@@ -171,17 +183,110 @@
     <p>El elemento &lt;figure&gt; es un contenedor de imágenes del que hablaremos al referirnos a éstas</p>
 </section>
 <section>
-        <section id= text-level> 
+    <h3>Otras etiquetas relacionadas con bloques</h3>
+    <p>La etiqueta hr crea una línea horizontal
+    <hr>
+    </p>
+    <p>La etiqueta br crea un salto de línea</p>
+    <br>
+</section>
+<section>
+        <section id= text-level>
             <header>
                 <h2>Text-Level Semnantics</h2>
             </header>
+            <section>
+                <h3>Hiperenlaces</h3>
+                <p>La etiqueta a</p>
+                <p>Existen cuatro tipos de url</p>
+                <ul>
+                    <li>Absolutas</li>
+                    <li>Relativas al origen</li>
+                    <li>Relativas al documento</li>
+                    <li>Internas</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Elementos en línea neutros</h3>
+                <p>La etiqueta span no tiene ningún valor semántico</p>
+                <p>Por ejemplo quiero que la palabra <span class="verde">verde</span> salga de su color</p>
+            </section>
+            <section>
+                <h3>Elementos claramente semánticos</h3>
+                <ul>
+                    <li>strong</li>
+                    <li>em (emphasis)</li>
+                    <li>sup</li>
+                    <li>sub</li>
+                    <li>small</li>
+                </ul>
+                <p>Los superíndices y subíndices tienen que ser de uso generalizado y reconocible</p>
+                 <p>H<sub>2</sub>0</p>
+                 <p>E=mc<sup>2</sup></p>
+                 <p>La etiqueta small introduce información legal o similar, lo que suele llamarse la "letra pequeña"</p>
+
+                 <section>
+                   <h3>Elementos con valor semántico nuevo</h3>
+                   <ul>
+                        <li>b (bold)</li>
+                        <li>i (italic)</li>
+                        <li>u (unerline)</li>
+                        <li>s (strike)</li>
+                   </ul> 
+                   <p>b: destacado con gines utilitarios</p>
+                   <p>fragmento de texto del que se llama la atención con fines utilitarios sin concederle ninguna importancia extra y sin que implique ningún cambio de tono o de estado de ánimo</p>
+                   <p>E.g. palabras claves en el resumen de un documento, nombre de producto, palabras procesables en el software interactivo orientado a texto...</p>
+                   <p>i: calidad diferente de texto, incluyendo cambio de tono o de estado de ánimo</p>
+                   <p>fragmento de texto que implique un cambio de tono o de estado de ánimo o cualquier otra desviación de la prosa normal que en cualquier manera indique una calidad diferente de texto</p>
+                   <p>E.g. una designación taxonómica, un término técnico, una frase idiomática en otro lenguaje, un pensamiento o un nombre de barco</p>
+                   <p>u: texto escrito de forma incorrecta voluntariamente; nombres propios chinos</p>
+                   <p>s: elemento que ya no es correcto o relevante</p>
+                 </section>
+                 <section>
+                    <h3>Elementos tipo técnico</h3>
+                    <ul>
+                        <li>samp (simple)</li>
+                        <li>code (code)</li>
+                        <li>kbd (keyboard)</li>
+                        <li>var (variebles)</li>
+                        <li>dfn (definition)</li>
+                        <li>abbr (abbr)</li>
+                    </ul>
+                    <p>La etiqueta abbe indica abreviaturas o acrónimos (siglas)</p>
+                 </section>
+                 <section>
+                     <h3>Uso de referencias y citas</h3>
+                     <ul>
+                         <li>q (quote)</li>
+                         <li>cite (cite o referencia)</li>
+                         <p>Película: <cite>El Señor de los Anillos</cite></p>
+                     </ul>
+                 </section>
+                 <section>
+                     <h3>Otras etiquetas semánticas de HTML 5</h3>
+                     <ul>
+                         <li>time, e.g. <time datetime="2019-12-06">día de la constitución de este año</time></li>
+                         <li>mark, marcado <mark>interactivo</mark></li>
+                     </ul>
+                 </section>
+                 <section>
+                     <h3>Edits</h3>
+                     <ul>
+                         <li>Ins</li>
+                         <li>Del</li>
+                     </ul>
+                     <p>Muestran el contenido que se ha insertado (Instead) en lugar de otro, que por tanto se elimina (Deleted).</p>
+                     <p><del>Esto ya no vale</del></p>
+                     <p><ins>Ahora es así</ins></p>
+                 </section>
+            </section>
         </section>
- </div>
- <footer class="main_footer">
-     <address>
-    <p>Ana Barrena;  © Curso Tajamar</p>
-    <a href="mailto://ana.barrenam@yahoo.es">Enviar correo</a>         
-     </address>
- </footer>
-</body>
-</html>
+    </div>
+    <footer class="main_footer">
+        <address>
+        <p>Ana Barrena: <a href="mailto://ana.barrenam@yahoo.es">ana.barrena@yahho.es</a></p>
+        <p><small>© Curso Tajamar</small></p>
+        </address>
+    </footer>
+    </body>
+    </html>
