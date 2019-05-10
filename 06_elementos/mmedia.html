@@ -46,27 +46,82 @@
                         </ul>
                     </li>
                     <li>Elementos de navegación gráficos</li>
-                <ul>
-                <section class="seccion_imagenes">
-                    <h3>Imágenes</h3>
-                    <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando la lengua bífida">
-                    <img src="./assets/varanococodrilo1.png" alt="Varano de Cocodrilo">
-                    <img src="./assets/ardilla.gif" alt="Ardilla">
-                    <img srcset="./assets/3boats.webp"
-                        src="./assets/3boats.webp" alt="Barcas">
-                </section>
-                <div class="clearfix">           
-                <section class="seccion_video_audio">
+                    <ul>
+                    <section>
+                        <h3>Imágenes</h3>
+                        <div class="seccion_imagenes">
+                            <!--<img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando la lengua bífida"> -->
+                            <img src="./assets/varanococodrilo1.png" alt="Varano de Cocodrilo">
+                            <img src="./assets/ardilla.gif" alt="Ardilla">
+                            <img srcset="./assets/3boats.webp"
+                                 src="./assets/3boats.webp" alt="Barcas">
+                            <img src="./assets/005.gif" alt="Gif animado abstracto">
+                            <img src="./assets/WoodElf.png" alt="Elfo">                                
+                            <img srcset="./assets/logo.svg"
+                                 src="./assets/logo.gif" alt="Logotipo">
+                        </div>
+                        <div class="clearfix"></div>
+                        <p>Uso de imágenes responsivas HTML</p>
+                        <div>
+                            <img srcset="./assets/komodo.300.jpg 300w,
+                                            ./assets/komodo.400.jpg 400w,
+                                            ./assets/komodo.500.jpg 500w,
+                                            ./assets/komodo.jpg 600w" 
+                                 size="(max-width:300px),
+                                        (max-width:400px),
+                                        (max-width:500px)"
+                                 src="./assets/komodo.jpg"
+                                 alt="Varano de Komodo mostrando su lengua bífida">
+                        </div>
+                        <p>La etiqueta picture y las imágenes responsivas en HTML</p>
+                        <picture>
+                            <source media="(min-width: 600px)" srcset="./assets/trebol600.jpg" type="image/jpg">
+                            <source media="(min-width: 500px)" srcset="./assets/trebol500.jpg" type="image/jpg">
+                            <source media="(min-width: 400px)" srcset="./assets/trebol400.jpg" type="image/jpg">
+                            <source srcset="./assets/trebol300.jpg" type="image/jpg">
+                            <img src="./assets/trebol600.jpg" alt="Trébol verde">
+                        </picture>
+                        <p>La etiqueta picture y los formatos alternativos de imágenes</p>
+                        <picture>
+                            <source srcset="./assets/tropical-sunrise.webp" type="imgae/webp">
+                            <img src="./assets/tropical-sunrise.jpg" alt="Amanecer tropical">
+                        </picture>
+                        <picture>
+                            <source srcset="./assets/logo.svg"type>
+                            <img src="./assets/logo.gif" alt="Logotipo">
+                        </picture>
+                        <p>Etiqueta figure</p>
+                        <figure>
+                            <img src="./assets/trebol600.jpg" alt="">
+                            <figcaption>Trebol verde</figcaption>
+                        </figure>
+                    </section>
+                <section>
                     <h3>Vídeo y Audio</h3>
+                    <p>Es posible incluir un vídeo desde una fuente externa</p>
+                    <div class="embed-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kdIwrsEwH-I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                    </div>
+                    <p>Otra opción es reproducir vídeos de nuestro servidor</p>
+                    <video controls></video>
+                    <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
+                    <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type= "video/mp4">
+                    <audio src=""></audio>
                 </section>
-                <section class="seccion_elementos_navegacion">
-                    <h3>Elementos de navegación</h3>
+                <section>
+                    <h3>Elementos gráficos de navegación</h3>
                 </section>
-            </main>
             <aside>
-                <h2>Publicidad</h2>
-                <p>Aquí iría la publicidad</p>
-            </aside>
+                <h3>Elementos embebidos no Multimedia</h3>
+                <p>La etiqueta iframe permite acceder a otra web desde la muestra</p>
+                <iframe class="web_externa" src="https://www.tajamar.es/" ></iframe>
+            </aside>                
+            </section>
+        </main>
+        <aside>
+            <h2>Publicidad</h2>
+            <p>Aquí iría la publicidad</p>
+        </aside>
     </div>
     <footer class="main_footer">
         <address>
@@ -75,5 +130,4 @@
         </address>
     </footer>
 </body>
-
 </html>
