@@ -33,54 +33,119 @@
                     <h2>Tablas</h2>
                 </header>
                 <p>Ejemplo de tabla del uso de los navegadores</p>
-                <table border="1" >
+                <table class="main_table">
+                    <caption>Porcentajes uso de los navegadores en distintos años</caption>
                     <tr>
-                        <td></td>
-                        <td>2017</td>
-                        <td>2018</td>
-                        <td>2019</td>
+                        <th></th>
+                        <th scope="col">2017</th>
+                        <th scope="col">2018</th>
+                        <th scope="col">2019</th>
                     </tr>
                     <tr>
-                        <td>Google Chrome</td>
+                        <th scope="row">Google Chrome</th>
                         <td></td>
+                        <td>61,55%</td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>C67</td>
+                                    <td>32,59%</td>
+                                </tr>
+                                <tr>
+                                    <td>C66</td>
+                                    <td>2,44%</td>
+                                </tr>
+                                <tr>
+                                    <td>C59</td>
+                                    <td>2.30%</td>
+                                </tr>
+                                <tr>
+                                    <td>C49</td>
+                                    <td>2,18%</td>
+                                </tr>
+                                <tr>
+                                    <td>C64</td>
+                                    <td>1,91%</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Safari</th>
                         <td></td>
+                        <td>15,13%</td>
+                        <td>
+                            <table class="centrar">
+                                <tr>
+                                    <td>SF11</td>
+                                    <td>10,79%</td>
+                                </tr>
+                                <tr>
+                                    <td>SF10</td>
+                                    <td>1,74%</td>
+                                </tr>
+                            </table>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mozilla FireFox</th>
+                        <td></td>
+                        <td>5,02%</td>
+                        <td>2,65%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">UC Browser</th>
+                        <td></td>
+                        <td>4,41%</td>
+                        <td>6,16%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Internet Explorer</th>
+                        <td></td>
+                        <td>2,88%</td>
+                        <td>2,44%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Opera</th>
+                        <td></td>
+                        <td>3,16%</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>Safari</td>
+                        <th scope="row">Otros</th>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Mozilla FireFox</td>
-                        <td></td>
-                        <td></td>
+                        <td>7,85%</td>
                         <td></td>
                     </tr>
+                </table>
+                <p>Ejemplo de tabla asimétrica</p>
+                <table class="viajes_table">
                     <tr>
-                        <td>UC Browser</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th colspan="2" rowspan="2">Preferencias de viajes</th>
+                        <th rowspan="3" scope="colgroup">Destinos</th>
                     </tr>
                     <tr>
-                        <td>Internet Explorer</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td scope="col">Caribe</td>
+                        <td scope="col">Europa</td>
+                        <td scope="col">Oriente</td>
                     </tr>
                     <tr>
-                        <td>Opera</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th rowspan="3">Rangos de edad</th>
+                        <th scope="row">Menores de 18</th>
+                        <td>38%</td>
+                        <td>25%</td>
+                        <td>37%</td>
                     </tr>
                     <tr>
-                        <td>Otros</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th scope="row">Entre 18 y 30 años</th>
+                        <td>32%</td>
+                        <td>37%</td>
+                        <td>31%</td>              
+                    </tr>
+                    <tr>
+                        <th scope="row">Mayores de 30</th>
+                        <td>30%</td>
+                        <td>38%</td>
+                        <td>32%</td>
                     </tr>
                 </table>
             </section>
@@ -88,15 +153,35 @@
                 <header>
                     <h2>Formularios</h2>
                 </header>
+                <p>Los formularios se incluyen dentro de la etiqueta form</p>
+                <p>En ellos se utilizan los siguientes controles</p>
+                <ul>
+                    <li>input - text</li>
+                    <li>text area</li>
+                    <li>checkbox</li>
+                    <li>radio butons</li>
+                    <li>select / options</li>
+                    <li>botones</li>
+                </ul>
+                <p>La etiqueta form tiene dos atributos importantes</p>
+                <ul>
+                    <li>action</li>
+                    <li>method</li>
+                </ul>
+                <form action="https://jsonplaceholder.typicode.com/users" method="GET">
+                        <input type="text" name="userName" placeholder="Escribe tú nombre">
+                        <input type="password" name="userPasswd" placeholder="Escribe tú password">
+                        <button type= "submit">Enviar</button>
+                    </form>
             </section>
             <h2>Datos</h2>
         </main>
     </div>
     <aside>
-            <h2>Publicidad</h2>
-            <p>Aquí iria la publicidad</p>
-        </aside>
-    </div> 
+        <h2>Publicidad</h2>
+        <p>Aquí iria la publicidad</p>
+    </aside>
+    </div>
     <iframe class="iframe_footer" src="./footer.html"></iframe>
 </body>
 </html>

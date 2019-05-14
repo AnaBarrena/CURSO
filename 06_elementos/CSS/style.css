@@ -165,3 +165,38 @@ video, embed {
 sin border {
     border: 0rem
 }
+.main_table {
+    width: 100%;
+}
+.centrar {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main_table>tbody>th {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem
+}
+/* filas pares */
+table.main_table>tbody>tr:nth-of-type(even) {
+    background-color: rgb(240, 240, 150)
+}
+/* filas impares */
+table.main_table>tbody>tr:nth-of-type(odd) {
+    background-color: rgb(190, 233, 125)
+}
+.viajes_table th {
+    border: 1 px solid;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem
+}
+.viajes_table tr:nth-of-type(even) {
+    background-color: aquamarine
+}
+.viajes_table tr:nth-of-type(odd) {
+    background-color: aqua
+}
+.viajes_table {
+    width: 100%;
+    text-align: center;
+}
