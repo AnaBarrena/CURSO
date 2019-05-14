@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Multimedia - Elementos de la Web</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato|Oleo+Script" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
@@ -104,12 +105,12 @@
                     <h3>Vídeo y Audio</h3>
                     <p>Es posible incluir un vídeo desde una fuente externa</p>
                     <div class="embed-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kdIwrsEwH-I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kdIwrsEwH-I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                       
                     </div>
                     <p>Otra opción es reproducir vídeos de nuestro servidor</p>
                     <video controls></video>
-                    <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
-                    <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type= "video/mp4">
+                        <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
+                        <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type= "video/mp4">
                     <audio src="./assets/SampleAudio_0.4mb.mp3" controls></audio>
                 </section>
                 <section>
@@ -119,16 +120,24 @@
                     <embed src="./assets/logo.svg" type="image/svg+xml">
                     <p>También relacionado con la navegación gráfica estaría el uso de iconos en los menús</p>
                 </section>
-            <aside>
-                <h3>Elementos embebidos no Multimedia</h3>
-                <p>La etiqueta iframe permite acceder a otra web desde la muestra</p>
-                <iframe class="web_externa" src="https://www.tajamar.es/" ></iframe>
-                <p>Otras formas de insetar contenido externo son object y embed></p>
-                <p>Object</p>
-                <object data="https://www.tajamar.es/" type="text/html"></object>
-                <p>Embed</p>
-                <embed src="https://www.tajamar.es/" type="text/html">
-            </aside>
+                <aside>
+                    <h3>Elementos embebidos no Multimedia</h3>
+                    <p>La etiqueta iframe permite acceder a otra web desde la muestra</p>
+                    <iframe class="web_externa" src="https://www.tajamar.es/" ></iframe>
+                    <P>Un uso habitual de los iframes son los mapas de Google</P>
+                    <!-- Aquí es necesario el uso del API personal de los mapas de Google -->                    
+                    <iframe width="600" height="450" class="sin-borde" 
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAcIE1ai1waCt6_y_pLSM23Y5imtc7fLE8&q=Space+Needle,Seattle+WA" 
+                    allowfullscreen></iframe>
+                    <p>Otras formas de insetar contenido externo son object y embed></p>
+                    <p>Object</p>
+                    <object data="https://www.tajamar.es/" type="text/html"></object>
+                    <p>Embed</p>
+                    <embed src="https://www.tajamar.es/" type="text/html">
+                </aside>
+                <footer class="main_section_footer">
+                    <a href="#inicio" rel="tag" title="Inicio"><i class="fas fa-arrow-up"></i></a>
+                </footer>
             </section>
         </main>
         <aside>
@@ -136,6 +145,6 @@
             <p>Aquí iría la publicidad</p>
         </aside>
     </div>
-    <iframe class="iframe_footer" src="./_footer.html"></iframe>
+    <iframe class="iframe_footer" src="./footer.html"></iframe>
 </body>
 </html>
