@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,11 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
+
 <body id="inicio">
     <header class="main_header">
         <h1>Etiquetas de HTML <i class="fab fa-html5"></i></h1>
@@ -139,7 +142,7 @@
                         <th scope="row">Entre 18 y 30 años</th>
                         <td>32%</td>
                         <td>37%</td>
-                        <td>31%</td>              
+                        <td>31%</td>
                     </tr>
                     <tr>
                         <th scope="row">Mayores de 30</th>
@@ -168,15 +171,98 @@
                     <li>action</li>
                     <li>method</li>
                 </ul>
+                <h3>Formulario mínimo</h3>
+                <p>Ejemplo de los elementos mínimos de un formulario y uso de los distintos métodos: GET y POST</p>
+                <h4>Uso del GET</h4>
                 <form action="https://jsonplaceholder.typicode.com/users" method="GET">
-                        <input type="text" name="userName" placeholder="Escribe tú nombre">
-                        <input type="password" name="userPasswd" placeholder="Escribe tú password">
-                        <button type= "submit">Enviar</button>
-                    </form>
+                    <input type="text" name="userName" placeholder="Escribe tú nombre">
+                    <input type="password" name="userPasswd" placeholder="Escribe tú password">
+                    <button type="submit">Enviar</button>
+                </form>
+                <h4>Uso del POST</h4>
+                <form action="https://jsonplaceholder.typicode.com/users" method="POST">
+                    <input type="text" name="userName" placeholder="Escribe tú nombre">
+                    <input type="password" name="userPasswd" placeholder="Escribe tú password">
+                    <button type="submit">Enviar</button>
+                </form>
+                <h3>Formularios más completos</h3>
+                <p>Usamos en un formulario los principales controles</p>
+                <form action="https://jsonplaceholder.typicode.com/users" name="complete-post" method="POST">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <label for="userName" class=".form_label">Nombre</label>
+                        <input type="text" name="userName" id="" class="form_control" placeholder="Nombre o apellidos" required>
+                        <label for="userPasswd">Contraseña</label>
+                        <input type="password" name="userPasswd" class="form_control" placeholder="Password" required minlength="8" maxlength="10">
+                        <label for="email" class="form_label">Correo</label>
+                        <input type="email" name="email" id="email" class="form_control" placeholder="Escribe un correo electrónico válido" required>
+                        <datalist id="formacion">
+                            <option>Graduado</option>
+                            <option>Licenciado</option>
+                            <option>Doctorado</option>
+                        </datalist>
+                        <label for="" class="form_label">Fecha de nacimiento</label>
+                        <input type="date" name="birthDate" id="birthDate" class="form_control">
+                        <label for="cv">Formación</label>
+                        <input type="text" name="cv" id="cv" list="formacion" class="form_control"
+                            placeholder="Selecciona o indica tus estudios">
+                        <label for="Más información" class="form_label">Más información</label>
+                        <textarea name="info" id="info" rows="5" placeholder="Más información"
+                            class="form_control"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Condiciones</legend>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus libero ad officiis esse
+                            alias nulla necessitatibus sequi quisquam laudantium, quibusdam blanditiis debitis numquam
+                            tempore quo. At quisquam explicabo tempora cum.</p>
+                        <input type="checkbox" name="isOk" id="isOk" required>
+                        <label for="isOK">Estoy de acuerdo</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos del curso</legend>
+                        <label for="Curso" class="form_label">Selecciona curso</label>
+                        <select name="Curso" id="Curso" class="form_control">
+                            <option value="">Elige un valor</option>
+                            <optgroup label="Desarrollo Front">
+                                <option value="HTML-01">HTML 5</option>
+                                <option value="CSS-02">CSS 3</option>
+                                <option value="JS-03">JavaScript</option>
+                            </optgroup>
+                            <optgroup label="Programación Back">
+                                <option value="Node-04">Node JS</option>
+                                <option value="PHP-05">PHP</option>
+                            </optgroup>
+                        </select>
+                        <p>Ubicaciones</p>
+                        <input type="radio" name="sitio" id="madrid" value="MAD">
+                        <label for="madrid">Madrid</label>
+                        <input type="radio" name="sitio" id="sevilla" value="SEV">
+                        <label for="sevilla">Sevilla</label>
+                        <input type="radio" name="sitio" id="Barcelona" value="BAR">
+                        <label for="barcelona">Barcelona</label>
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+                    <input type="reset" value="Borrar">
+                    <input type="reset">Borrar <i class=""></i>
+                </form>
+                <p>Existen otros controles de formularios</p>
+                <dl>
+                    <dt class="dt">Input Color</dt>
+                    <dd class="dd"><input type="color"></dd>
+                    <dt class="dt">Imput File</dt>
+                    <dd class="dd"><input type="file"></dd>
+                    <dt class="dt">Input Number</dt>
+                    <dd class="dd"><input type="number"></dd>
+                    <dt class="dt">Input Range</dt>
+                    <dd class="dd"><input type="range"></dd>
+                    <dt class="dt"><Input Search</dt>
+                    <dd class="dd"><input type="search"></dd>
+
+                    
+                </dl>
+                <div class="clearfix"></div>
             </section>
-            <h2>Datos</h2>
         </main>
-    </div>
     <aside>
         <h2>Publicidad</h2>
         <p>Aquí iria la publicidad</p>
@@ -184,4 +270,5 @@
     </div>
     <iframe class="iframe_footer" src="./footer.html"></iframe>
 </body>
+
 </html>

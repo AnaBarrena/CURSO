@@ -191,12 +191,32 @@ table.main_table>tbody>tr:nth-of-type(odd) {
     padding-bottom: 0.5rem
 }
 .viajes_table tr:nth-of-type(even) {
-    background-color: aquamarine
+    background-color: rgb(190, 255, 233)
 }
 .viajes_table tr:nth-of-type(odd) {
-    background-color: aqua
+    background-color: rgb(100, 248, 248)
 }
 .viajes_table {
     width: 100%;
     text-align: center;
+}
+.form_control {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem
+}
+.form_label{
+    display: block;
+    margin-top: 1rem
+}
+fieldset {
+    margin-bottom: 1rem;
+    border-color: rgb(124, 124, 124);
+}
+.placeholder {
+    color: brown
 }
