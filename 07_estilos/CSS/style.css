@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+/* 
+Ejemplo de import asociado a una medida Query @import (url./header.css) screen and (max-device-widht: 500px)
+Ejemplo  de imports sin condiciones 
+@import url(./header.css);
+@import url(./footer.css);
+
+Otra dirección son 
+@font-face
+@keyframes
+
+@namespace
+@page
+@supports
+
+*/
+
+/* Selector de etiqueta */
+
+body {
+    background-color: beige;
+}
+
+/* Selector de clase */
+.azul {
+    color: blue
+}
+
+/* Selector de id: NO SE USA POR BUENAS PRÁCTICAS */
+
+#verde {
+    color: darkgreen
+}
+
+/* Selectores agrupados */
+
+p, blockquote {font-size: 1.1rem}
+/* p {font-size: 1.1rem}
+blockquote {font-size: 1.1rem} */
+
+
+/* Forma habitual de usar medua Queries */
+
+@media screen and (max-device-widht: 500px) {
+
+    body {
+        background-color: brown;
+    }
+
+}
