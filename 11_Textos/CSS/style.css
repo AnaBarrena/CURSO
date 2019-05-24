@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'source-sans-proregular';
+    src: url(../assets.html/sourcesanspro-regular-webfont.woff2) format('otf');
+    src: url(../assets.html/sourcesanspro-regular-webfont.woff2) format('');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "source-sans-proregular"
+}
