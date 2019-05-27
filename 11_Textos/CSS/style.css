@@ -1,12 +1,36 @@
 @font-face {
-    font-family: 'source-sans-proregular';
-    src: url(../assets.html/sourcesanspro-regular-webfont.woff2) format('otf');
-    src: url(../assets.html/sourcesanspro-regular-webfont.woff2) format('woff2');
+    font-family: "source_sans_proregular";
+    src: url(../assets/SourceSansPro-Regular.otf) format('truetype');
+    src: url(../assets/sourcesanspro-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: "RemachineScript_Personal_Use";
+    src: url(../assets.html/RemachineScript_Personal_Use.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: "source-sans-proregular"
+    font-family: "source_sans_proregular", sans-serif;
+}
+
+h1 {
+    font-family: "RemachineScript_Personal_Use", cursive;
+}
+
+.content_wrapper {
+    font-size: 1,1em;
+}
+
+section.centrada {
+    width: 83.8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p { border: 1px solid;
+    padding: 1em;
 }
