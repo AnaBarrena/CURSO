@@ -23,10 +23,10 @@ body {
 
 h1 {
     font-family: "RemachineScript_Personal_Use", cursive;
-    font size: 4rem;
+    font-size: 4rem;
     padding: 1em;
     border: 1 px solid;
-    border radius: 10px; 
+    border-radius: 10px; 
 }
 
 .content_wrapper {

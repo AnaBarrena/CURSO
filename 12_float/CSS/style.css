@@ -1,0 +1,14 @@
+main {
+    margin: 5%;
+}
+
+.image-wrapper {
+    width: 50%;
+    float: left;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem
+}
+
+img {
+    max-width: 100%;
+}
