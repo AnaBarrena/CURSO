@@ -13,20 +13,24 @@
     font-style: normal;
 }
 
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: "source_sans_proregular", sans-serif;
+    font-family: "source_sans_pro", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-    font-family: "RemachineScript_Personal_Use", cursive;
+    /* font-family:  "seves_brg", cursive */
+    font-family: "getsu_magic", cursive;
     font-size: 4rem;
-    padding: 1em;
-    border: 1 px solid;
-    border-radius: 10px; 
+    padding: 1rem 2rem;
+    border: 1px solid;
+    border-radius: 10px;
 }
 
 .content_wrapper {
@@ -44,65 +48,71 @@ section.centrada p { border: 1px solid;
 }
 
 .espacios {
-    /* display: flex; */
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 2rem 1rem;
     background-color: coral;
+    padding-bottom: 2.5%;
 }
 
-.espacios::after {
-    content: '';
-    display: block;
-    clear: both;
+.espacios h2  {
+    padding: 1rem;
+    margin: 0;
 }
 
-.espacios h2 {
-    padding: 1rem
-}
-
-.espacios p {
+.espacios p  {
     padding: 1rem;
     background-color: white;
-}
-
-.espacios p {
-    padding: 1rem;
-    background-color: white;
-    width: 30%;
-    float: left;
     margin-left: 2.5%;
-}
-
-.espacios p:last-of-type {
-    margin-right: 2,5%;
+    margin-right: 2.5%;
 }
 
 .flex {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    background-color: coral
+    margin: 2rem 1rem;
+    background-color: coral;
+    padding-bottom: 5%;
 }
 
-.flex h2 {
-    padding:  1rem;
-    width: 1 0 100%;
-    
+.flex h2  {
+    padding: 1rem;
+    margin: 0;
 }
 
-.flex .flex-wrapper {
-    display: flex;
-}
-
-.flex p {
+.flex p  {
     padding: 1rem;
     background-color: white;
-    margin-left: 2.5%;
-}
-
-.flex p:last-of-type {
-    margin-right: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 @media screen and (min-width: 690px) {
 
+    .espacios::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .espacios p  {
+        width: 30%;
+        float: left;
+    }
+
+    .espacios p:not(:last-of-type) {
+        margin-right: 0;
+    }
+
+    .flex .flex-wrapper {
+        display: flex;
+    }
+
+    .flex h2 {
+        text-shadow:  5px 5px 5px grey
+    }
+
+    .flex p {
+        box-shadow: 5px 5px 10px 10px grey
+    }
+    
+    .flex p:not(:last-of-type) {
+        margin-right: 0;
+    }
 }
