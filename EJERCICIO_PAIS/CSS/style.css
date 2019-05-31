@@ -5,9 +5,9 @@ body {
 
 .main_header {
     font-family: 'Oleo+Script', cursive;
-    background-color: red;
-    color: whitesmoke;
-    padding: 0.8rem 0rem 0.5rem 2rem 
+    background-color: rgba(255, 0, 0, 0.815);
+    color: rgba(245, 245, 245, 0.945);
+    padding: 0.8rem 0rem 0.5rem 2rem
 }
 
 .main_header p {
@@ -18,7 +18,7 @@ body {
 }
 
 .main_header nav {
-    margin-left: -1rem
+    margin-left: 1rem
 }
 
 .main_header nav ul {
@@ -38,15 +38,37 @@ body {
 
 }
 
+header {
+    min-height: 100vh;
+    background-color: green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../assets/italian_flag.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: difference; 
+}
+
+h1 {
+    color: black
+}
+
 .content_wrapper {
     margin: 1rem 3rem;
 }
-
 
 .main_section_footer {
     text-align: right;
     color: red;
     font-size: 1.5rem;
+}
+
+.smaller {
+    font-size: smaller,
 }
 
 .image_wrapper {
@@ -87,7 +109,7 @@ blockquote {
     margin-left: 0;
     margin-right: 0;
     padding-left: 1rem;
-    border-left: 4px solid lightgrey;
+    border-left: 4px solid rgb(250, 230, 220);
     /* font-style: italic; */
 }
 
@@ -95,7 +117,7 @@ blockquote footer {
     width: fit-content;
     margin-top: 0.5rem;
     padding-top: 0.3rem;
-    border-top: 1px solid gray;
+    border-top: 1px solid bisque;
 }
 /* ul {
     list-style-type: decimal;
