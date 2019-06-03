@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0
+}
+
+header, footer {
+    background-color: brown;
+    color: bisque;
+    min-height: 10vh;
+}
+
+main {
+    width: 90%;
+    margin: 1rem auto;
+    min-height: 80vh;
+}
+
+p {
+    background-image: salmon;
+    padding: 0.5rem 3rem;
+}
+
+.relative {
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+}
