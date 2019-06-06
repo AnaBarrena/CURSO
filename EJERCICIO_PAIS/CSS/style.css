@@ -4,14 +4,15 @@ body {
 }
 
 .main_header {
-    font-family: 'Oleo+Script', cursive;
-    background-color: rgba(255, 0, 0, 0.815);
+    font-family: 'Oleo+Script';
+    font-size: larger;
+    /* background-color: rgb(100, 10, 10); */
     color: rgba(245, 245, 245, 0.945);
     padding: 0.8rem 0rem 0.5rem 2rem
 }
 
 .main_header p {
-    font-size: 1.33rem;
+    font-size: 1.30rem;
     font-weight: bold;
     margin-top: -1rem;
     margin-bottom: 0;
@@ -46,7 +47,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    background-image: url(../assets/milan.jpg);
+    background-image: url(../assets/italian_flag.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
