@@ -20,7 +20,6 @@
                 <li><a href="./index.html#historia" rel="tag">Historia</a></li>
                 <li><a href="./index.html#geografía" rel="tag">Geografía</a></li>
                 <li><a href="./index.html#gastronomía" rel="tag">Gastronomía</a></li>
-                <li><a href="#">Formulario</a></li>
                 <li><a href="#formulario">Formulario</a></li>
             </ul>
         </nav>
@@ -41,47 +40,58 @@
                     <input type="email" name="email" id="email" required
                         class="form_control" placeholder="Correo electrónico">
                     </datalist>
+                    <label for="email" class="form_label">Web</label>
+                    <input type="web" name="web" id="web"
+                    class="form_control" placeholder="Web Site">
+                    </datalist>
                     <label for="birthDate" class="form_label">Fecha de nacimiento</label>
                     <input type="date" name="birthDate" id="birthDate" class="form_control">      
                     <label for="info" class="form_label">
                         Comentario</label>
-                    <textarea name="info" id="info" rows="5"
-                        placeholder="Escribe un comentario o una opinión" 
+                    <textarea name="info" id="info" rows="6"
+                        placeholder="Escribe tu comentario" 
                         class="form_control"></textarea>  
                 </fieldset>
                 <fieldset id="condiciones">
                     <legend>Condiciones</legend>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum animi non perspiciatis ut excepturi dolores obcaecati ullam dignissimos. Error incidunt corrupti debitis totam ea similique ab soluta hic id pariatur.</p>
+                    <p>Accusantium animi fuga, facere tempore sapiente, dicta nobis non maxime accusamus hic omnis nemo, eos voluptate quia totam voluptatibus? Magnam ratione tenetur et, cupiditate rerum eius aut ducimus a nisi? Dicta laborum neque asperiores nihil ducimus quia consequuntur autem sint, repellendus soluta alias, natus aut et maiores tempora dolores nulla excepturi sunt. Et delectus earum quas eum nulla reiciendis accusantium labore, quo eaque impedit beatae quidem, molestias sed consectetur voluptate. Magni enim aut illum!</p>
+                    <p>Magnam molestiae debitis temporibus blanditiis. Eos corrupti impedit, quam ullam maiores assumenda natus, rem harum dignissimos, fuga voluptas minus beatae modi voluptate! Quibusdam, corrupti magnam asperiores incidunt fuga iusto dolores commodi odit neque molestiae vel veniam exercitationem iste culpa recusandae eligendi eum aliquam, in voluptatem sit tempora ipsum ullam! Voluptatibus, assumenda esse. Iusto, quaerat molestias reiciendis quos provident, nemo vero omnis reprehenderit delectus odit eveniet.</p>
                     <input type="checkbox" name="isOk" id="isOk" required>
-                    <label for="isOk">Estoy deacuerdo con las condiciones</label>
+                    <label for="isOk">He leído y acepto las condiciones</label>
                 </fieldset>
-                <input type="submit" value="Enviar">
-                <button type="submit">
-                    Enviar <i class="fas fa-paper-plane"></i>
-                </button>
-                <input type="reset" value="Borrar">
-                <button type="reset">
-                    Borrar <i class="fas fa-eraser"></i>
-                </button>
+                <button type="submit">Enviar<i class="fas fa-paper-plane"></i></button>
+                <button type="reset">Borrar<i class="fas fa-eraser"></i></button>
             </form>
             <div class="clearfix"></div>
         </section>
-        <aside>
-            <h2>Publicidad</h2>
-            <p>Aquí iría la publicidad</p>
-            <template id="publi-extra">
-                <p>Promoción: Tour por Italia desde 150€</p>
-            </template>
+        <aside class="tienda img-wrapper-right">
+            <h3>Publicidad</h3>
+            <div class="img-wrapper-left">
+                <a href="http://www.paipatoursboyaca.com/"><img src="./assets/Promocion.jpg" alt="Promocion Viajes a Europa 2018/2019"></a>
+            </div>
         </aside>
     </div>
-    <iframe class="iframe_footer" src="./footer.html"></iframe>
-    <div id="hcard-AnaBarrena" class="vcard">
-            <span class="fn n">
-                <span class="given-name">Ana</span>
-                <span class="additional-name"></span>
-                <span class="family-name">Barrena Martín</span>
-            </span>
-        <a class="email" rel="author" href="mailto://ana.barrenam@yahoo.es">ana.barrenam@yahoo.es</a>
-    </div>
+    <footer class="main_footer">
+            <address>
+            <div id="hcard-AnaBarrena" class="vcard">
+                <span class="fn n">
+                    <span class="given-name">Ana</span>
+                    <span class="additional-name"></span>
+                    <span class="family-name">Barrena Martín</span>
+                </span>
+                <a class="email" rel="author" href="mailto://ana.barrenam@yahoo.es">ana.barrenam@yahoo.es</a>
+            </div>
+            </address>
+            <aside>
+                <ul>
+                    <li><a href="https://wwww.facebook.com" target="blank" rel="external" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.twitter.com" target="blank" rel="external" title="Twitter"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="blank" rel="external" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com" target="blank" rel="external" title="YouTube"><i class="fab fa-youtube-square"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="blank" rel="external" title="Pinterest"><i class="fab fa-pinterest-square"></i></a></li>
+                </ul>
+            </aside>
+            <small>Copyright © 2019 - Curso Tajamar</small>
+        </footer>
 </body>
 </html>
