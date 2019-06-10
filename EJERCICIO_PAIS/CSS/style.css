@@ -12,14 +12,14 @@ body {
 }
 
 .main_header p {
-    font-size: 1.30rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-top: -1rem;
     margin-bottom: 0;
 }
 
 .main_header nav {
-    margin-left: 2rem
+    margin-left: 1rem
 }
 
 .main_header nav ul {
@@ -39,7 +39,6 @@ body {
 
 }
 
-
 @media screen and (min-width: 650px) {
     
     .content-wrapper {
@@ -51,25 +50,20 @@ body {
        display: initial;
     }
 
-    nav li { /* Los li son contenedores, para poder fijar desde ellos posiciones absolutas */
+    nav li {
 		position: relative;
 		}
 
     nav ul {
         padding: 0;
         margin: 0;
-        background-color: rgba(200,200,200,0.2);
+        background-color: rgba(200, 200, 200, 0.13);
         display: flex;
     }
 
-    nav a { /* Cualquier a dentro de nav */
+    nav a {
 		display: block;
 		padding: 0.3rem 0.7rem;
-		/* margin: 0.25em;
-        border-radius: .5em;
-        border: 1px solid #ba89a8;
-        background-color: rgba(200,200,200,0.5);
-        */
         text-align: center; 
         font-weight: bold;
     }
@@ -83,8 +77,8 @@ body {
     nav > ul a:focus,
 	nav > ul a:hover
 	{ /* Cualquier a dentro de nav */
-		background-color: brown;
-		color:whitesmoke;
+		background-color: rgb(100, 10, 10);
+		color:white;
 	}
     
     nav.horizontal>ul>li{
@@ -92,10 +86,10 @@ body {
         flex-wrap: wrap; 
         align-items: center;
     }
-
+}
 
 header {
-    min-height: 50vh;
+    min-height: vh;
 
     display: flex;
     justify-content: center;
@@ -109,7 +103,7 @@ header {
 }
 
 h1 {
-    color: black
+    color: black)
 }
 
 .content_wrapper {
@@ -135,13 +129,6 @@ img {
    max-width: 100%;
    width: 100%;
    display: inline-block;
-}
-
-.seccion_imagenes img {
-    max-width: 25%;
-    display: block;
-    float: left;
-    background-color: burlywood;
 }
 
 .pre_no_mono {
