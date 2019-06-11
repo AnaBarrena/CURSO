@@ -1,0 +1,27 @@
+:root {
+    --color-letra: bisque;
+    --color-fondo: maroon;
+    --color-gris-fondo: lightgray;
+    --color-gris-borde: rgb(165, 165, 165);
+    --font-main: 'Lato', sans-serif;
+    --font-title: 'Baloo Bhai', cursive;
+    --size-title: calc( var(--size-small) * 3);
+}
+
+body {
+    font-family: var(--font-main)
+}
+
+header {
+    min-height: 10vh;
+    font-family: var(--font-title);
+    background-color: var(--color-fondo);
+    color: var (--color-letra);
+}
+
+footer {
+    background-color: var(--color-fondo);
+    color: var (--color-letra);
+    min-height: 10vh
+}
+

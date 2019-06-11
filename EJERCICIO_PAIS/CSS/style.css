@@ -6,7 +6,6 @@ body {
 .main_header {
     font-family: 'Oleo+Script';
     font-size: larger;
-    /* background-color: rgb(100, 10, 10); */
     color: rgba(245, 245, 245, 0.945);
     padding: 0.8rem 0rem 0.5rem 2rem
 }
@@ -76,7 +75,7 @@ body {
 
     nav > ul a:focus,
 	nav > ul a:hover
-	{ /* Cualquier a dentro de nav */
+	{
 		background-color: rgb(100, 10, 10);
 		color:white;
 	}
@@ -89,7 +88,7 @@ body {
 }
 
 header {
-    min-height: vh;
+    min-height: 50vh;
 
     display: flex;
     justify-content: center;
@@ -98,26 +97,22 @@ header {
     background-image: url(../assets/italian_flag.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-blend-mode: difference; 
 }
 
 h1 {
-    color: black)
+    color: black
 }
 
 .content_wrapper {
-    margin: 1rem 3rem;
+    margin: 2rem 3rem;
 }
 
 .main_section_footer {
     text-align: right;
     color: rgb(100, 10, 10);
     font-size: 1.5rem;
-}
-
-.smaller {
-    font-size: smaller,
 }
 
 .image_wrapper {
@@ -127,8 +122,9 @@ h1 {
 
 img {
    max-width: 100%;
-   width: 100%;
+   /* width: 100%; */
    display: inline-block;
+   text-align: center
 }
 
 .pre_no_mono {
@@ -207,22 +203,6 @@ footer a {
     width: 100%;
     height: 60vh;
 }
-.embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-}
-.embed-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-video, embed {
-    max-width: 100%;
-}
 
 .sin-borde {
     border:0;
@@ -232,37 +212,18 @@ video, embed {
     margin-right: auto;
 }
 
-
 section.tabla:after{
-    content: '';
     display: block;
     clear: both;
 }
 
 .table-wrapper-right:hover table {
-    border-spacing: 10px;
     border-collapse: separate;
 }
 
 td {
-    padding: 0.2rem 1rem;
-    border: 1px solid; 
-}
-
-.form_control {
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid gray;
-    padding-top: 0.7rem;
-    padding-bottom: 0.2rem;
-    margin-bottom: 1rem;
-}
-
-.radio_wrapper {
-    padding-top: 0.7rem;
-    padding-bottom: 0.2rem;
-    margin-bottom: 1rem;
+    padding: 0.2rem 2rem;
+    border: 0.5px solid; 
 }
 
 .placeholder {
@@ -287,4 +248,10 @@ td {
 .form_label {
     display: block;
     margin-top: 1rem;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+    border-color: rgb(230, 230, 230);
+    width: 50%
 }
