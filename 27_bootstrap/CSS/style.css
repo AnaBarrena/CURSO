@@ -5,7 +5,6 @@
     --color-gris-borde: rgb(165, 165, 165);
     --font-main: 'Lato', sans-serif;
     --font-title: 'Baloo Bhai', cursive;
-    --size-title: calc( var(--size-small) * 3);
 }
 
 body {

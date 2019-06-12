@@ -4,9 +4,9 @@
   "description": "Ejemplos del uso de SASS",
   "main": "index.js",
   "scripts": {
-    "start": "sass sass/:CSS/ --watch",
+    "start": "sass sass/:css/ --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass sass/:CSS/ --watch"
+    "sass": "sass sass/:css/ --watch --no-source-map"
   },
   "keywords": [],
   "author": "Ana Barrena",
