@@ -1,6 +1,7 @@
 body {
-    margin: 0;
+    margin: 0rem;
     font-family: 'Lato', sans-serif;
+    text-align: justify;
 }
 
 .main_header {
@@ -41,8 +42,8 @@ body {
 @media screen and (min-width: 650px) {
     
     .content-wrapper {
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
     }
 
     div.superior nav.horizontal {
@@ -122,7 +123,7 @@ h1 {
 
 img {
    max-width: 100%;
-   /* width: 100%; */
+   width: 100%;
    display: inline-block;
    text-align: center
 }
@@ -208,8 +209,8 @@ footer a {
     border:0;
 }
 .centrar {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: left;
+    margin-right: right;
 }
 
 section.tabla:after{
@@ -222,27 +223,27 @@ section.tabla:after{
 }
 
 td {
-    padding: 0.2rem 2rem;
-    border: 0.5px solid; 
+    padding: 0.1rem 1rem;
+    border: 0.1px solid; 
 }
 
 .placeholder {
-    color: brown;
+    color:brown;
     background-color: bisque;
     font-family: 'Baloo Bhai', cursive;
 }
 
-.form_control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: brown;
-    opacity: 1; /* Firefox */
+.form_control::placeholder {
+    color:grey;
+    opacity: 1;
 }
   
-  .form_control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: brown;
+  .form_control:-ms-input-placeholder {
+    color: grey;
 }
   
-  .form_control::-ms-input-placeholder { /* Microsoft Edge */
-    color: brown;
+  .form_control::-ms-input-placeholder {
+    color: grey;
 }
 
 .form_label {
@@ -252,6 +253,6 @@ td {
 
 fieldset {
     margin-bottom: 1rem;
-    border-color: rgb(230, 230, 230);
-    width: 50%
+    border-color: rgb(165, 70, 70);
+    width: 15%
 }
