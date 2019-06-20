@@ -90,6 +90,7 @@ body {
 
 header {
     min-height: 50vh;
+    max-width: 100%;
 
     display: flex;
     justify-content: center;
