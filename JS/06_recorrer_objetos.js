@@ -1,6 +1,6 @@
 
 /**
- * @description recoore un objeto a tantos niveles como contenga
+ * @description recorre un objeto a tantos niveles como contenga
  *               y crea un string con la información
  * @param {object} obj
  * @returns {string}
@@ -53,4 +53,3 @@ let p1 = {
 
 cadena = objectToString(p1)
 console.log(cadena)
- 
