@@ -5,6 +5,11 @@
     color: bisque;
 }
 
+.main-header h1 {
+    padding: 0.6rem 2rem;
+}
+
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -41,3 +46,4 @@ nav a.activo {
     border: none;
     border-bottom: 1px solid rgba(169, 169, 169, 0.65)
 }
+
