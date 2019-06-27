@@ -23,7 +23,7 @@ let restaRaices = function (a=0, b=0) {
 console.log({user: 'Pepe', edad: 33})
 console.log(user)
 
-/* ES6: Asignación de funciones ARROW*/
+/* ES6: Asignación de funciones ARROW o lambda*/
 
 /* let productoRaices = function (a=0, b=0) {
        return Math.sqrt(a) * Math.sqrt(b)
@@ -34,3 +34,5 @@ console.log(user)
 }*/
 
 let productoRaices = (a=0, b=0) => Math.sqrt(a) * Math.sqrt(b)
+
+let mediaRaiz = (a) => Math.sqrt(a)/2
