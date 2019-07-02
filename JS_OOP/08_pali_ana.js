@@ -25,4 +25,4 @@ if(texto())
 }
 }
 
-console.log(palabra.replace))
+console.log(palabra.replace)
