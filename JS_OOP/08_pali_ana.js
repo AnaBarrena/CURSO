@@ -1,3 +1,39 @@
+
+/** function isPali
+ * @description: comprobar si en string es palindromo
+ * @param {string} cadena
+ * @returns {boolean}
+ */
+
+const isPali = (cadena ='') => {
+	 let r = true
+	 const cadenaSinEspacios = cadena.split(' ').join('').toLowerCase()
+	 //const cadenaSinEspacios = cadena.replace(/ /,'').toLowerCase()
+	 console.log(cadenaSinEspacios)
+	 const cadenaInversa = cadenaSinEspacios.split('').reserve().join('')
+	 console.log(cadenaInversa)
+	 if (cadenaSinEspacios === cadenaInversa) {
+		 r = true
+	 }
+	 return r
+ }
+
+
+const isPaliShort = (cadena = '') => {
+    sinEspacios = cadena.split(' ').join('').toLowerCase()
+    return sinEspacios === 
+        sinEspacios.split('').reverse().join('') ? true : false 
+}
+
+module.exports = {}
+module.exports.isPali = isPali
+module.exports.isPaliShort = isPaliShort
+
+
+
+//////////////////////////////////// EJERCICIO PRÁCTICO
+
+/*
 {
 const palabra = ["Atar a la rata"]
 
@@ -26,3 +62,4 @@ if(texto())
 }
 
 console.log(palabra.replace)
+*/
