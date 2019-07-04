@@ -96,3 +96,14 @@ function isNombreRey(nombre) {
  
 console.log(isNombreRey('fernando'))
 console.log(isNombreRey('Federico'))
+
+
+
+/////////////////////////////////////
+
+/**
+ * @description: dar formato a feha
+ * @param
+ * @returns
+ */
+const fecha = new Date(año_num,mes_num,dia_num)
