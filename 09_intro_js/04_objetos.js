@@ -1,37 +1,44 @@
-function ejemplo (){
+'use strict'
+
+function ejemplo () {
     let v = 160
     let a = 4
     let modelo = 'RAV'
     let marca = 'Toyota'
-
-    let coche = {...
+    
+    let coche = {
+        v: 160,
+        a : 4,
+        modelo : 'RAV',
+        marca : 'Toyota',
+        usuarios : ['Pepe', 'Elena', 'Rosa']       
     }
 
+    // Array, lista, arreglo
     let aDatos = [2, 4, 6, 7, 37]
 
-    console.log(coche)
-    console.log(coche.marca)
+    console.log(coche) 
+    console.log(coche.marca) 
 }
 
 ejemplo()
 
-// Objeto JSON u Objeto literal
+// Objeto JSON o literal
 
 let persona = {
-    fullName {
+    fullNombre : {
         nombre : 'Pepe',
-        apellidos : 'Pérez',
-    }
-    años : {
-        valor : 20
-        unidad : 'años'
-    }
+        apellidos : 'Pérez'
+    },
+    edad : {
+        valor: 20,
+        unidad: ' años'
+    },
     altura : 178,
     isMujer: false,
     formacion : 'Ingeniero',
     aficiones : ['leer', 'bailar', 'programar']
 }
 
-console.log(persona)
 
-console.log(User)
+  console.log(persona)
