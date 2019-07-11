@@ -5,9 +5,9 @@ const capitalize = (cadena = '') =>
 
 /** function fechaEsp()
  * @description: devuelve la fecha como
- * “Día de la semana, día de Mes del Año” 
+ * “Día de la semana, día de Mes del Año”
  * @author Alejandro Cerezo
- * @param { date | string } fecha 
+ * @param { date | string } fecha
  * si es string, debe respetar el estandar ISO
  * @external aDias, aMeses
  * @returns { string }

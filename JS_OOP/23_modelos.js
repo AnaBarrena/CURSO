@@ -1,5 +1,5 @@
 /* 
-Definir la estructura de una funció constructora 
+Definir la estructura de una función constructora 
  que crea los objetos que almacenan una factura. 
 Las facturas están formadas por:
 - la información de la propia empresa:
