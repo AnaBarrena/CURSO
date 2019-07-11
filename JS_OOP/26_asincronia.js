@@ -16,7 +16,7 @@ function leerDatosAsinc(i, timer = 1000, callback) {
             console.log(`lectura de datos número ${i}`)
             callback(respuestas [i])
         }, timer)
-} 
+}
 
 let i = 1
 leerDatosAsinc(i, 2000, (aDatos) => {
