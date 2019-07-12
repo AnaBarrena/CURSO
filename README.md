@@ -33,8 +33,8 @@ Variables
 
 - global 
 - local 
-- al bloque => let / const 
-- a la función => var
+    - al bloque => let / const 
+    - a la función => var
 
 Constantes 
 
