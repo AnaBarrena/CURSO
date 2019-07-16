@@ -1,26 +1,35 @@
-/** calcularFbncci
- * @param {number} limite
- * @returns {array}
+/**
+ * @class: Helper
+ * @method isValidNumber
+ * @method: isEntero
  */
-function calcularFbncci(limite) {
-    if (limite < 1) {
-        throw new Error('Límite no válido')
-    }
-    let i = 0
-    let j = 1
-    let aFibo = [i, j]
-    do {
-       aFibo.push(i+j)
-       i = j
-       j = aFibo[aFibo.length-1]
-    } while ( (i+j) <= limite )
-    return aFibo     
-}
+module.exports = class Helper {
 
+   /**
+    * @param {any} n
+    * @returns {boolean} 
+    */ 
+   static isValidNumber(n) {
+       let r = true
+       if ( isNaN(n) 
+           || typeof n == 'boolean' 
+           || n === ''
+           || typeof n == 'object' 
+           // || Array.isArray(n)   || n === null
+       ) {
+           r = false
+       }
+       return r
+   }   
 
-let limite = 0
-try {
-   console.log(calcularFbncci(limite))
-} catch (error) {
-   console.log(error.message)
+   /**
+    * @param { number | string} n 
+    * @returns {boolean}
+    */
+   static isEntero(n) {
+       // return Number.isInteger(Number(n))
+       // return parseInt(n) === parseFloat(n)
+       return Math.trunc(Number(n)) === Number(n)
+
+   }
 }
