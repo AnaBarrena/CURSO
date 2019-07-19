@@ -1,0 +1,70 @@
+/**
+ * @description: Crear un programa capaz de analizar una frase por: número de palabras, longitud media de las palabras,
+ *               veces cada letra y frecuencia cada letra. ++ Incorporar un interface Web de entrada y salida ++
+ * @param {number | string} frase
+ * @returns {boolean} frase
+ * @method {void} mostrar
+ */
+
+
+function contar_palabras(){
+    let frase
+    const frase = ['Esto es el examen']
+    frase.contar_palabras
+	frase = document.getElementById("contar_palabras").value;
+	fraseTroceado = frase.split (" "); // 4
+	numeroPalabras = fraseTroceado.length;
+	alert(numeroPalabras);
+}
+
+console.log.contar_palabras();
+
+
+function longitud() {
+    var Letra
+    for (var i = 0; i < concat.length; i++) {
+        console.log(concat[i]);
+      }
+    cadena = "Esto es el examen";
+    longitudLetra = Letra.length;
+
+    console.log(longitudLetra);
+    console.log(contar_letra.length)
+}
+
+
+{
+const frase = 'Esto es el examen'
+
+    function Letra () {
+        let Letra
+        let array = frase.split('').join(' ')
+        array = frase.split('')
+        for (let i = 0; i < contador.length; i++) {
+            const item = frase[i];
+            if ( nombre.toUpperCase() == item.toUpperCase()) {
+                return [true, i]
+                return contador
+            }
+        } 
+    }
+
+    let frase = 'Esto es el examen'
+    console.log(contador("veces"));
+}
+
+
+function FrecuenciaLetra () {
+    let array = frase.split('').join(' ')
+    frecuency = {}
+    for (let i = 0; i < frase.length; i++) {
+    const item = frase[i];
+        if ( nombre.toUpperCase() == item.toUpperCase()) {
+            return [false, i]
+        }
+
+    let frase = 'Esto es el examen'
+    console.log(frase);
+
+    }
+}
