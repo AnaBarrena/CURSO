@@ -19,35 +19,20 @@ main {
     min-height: 60vh;
 }
 
-section {
-    padding: 2rem;
+.btn {
+    cursor: pointer;
 }
 
-
-dialog {
-    background-color: bisque;
+.confirmacion {
     color: brown;
-}
-
-dialog div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.out-wrapper {
+    background-color: bisque;
     text-align: center;
-    padding-bottom: 1rem;
 }
 
-.cronos {
-    padding: 1rem 0rem;
+li {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem
 }
-.cronos  output {
-    border: 1px solid brown;
-    padding: 0.4rem 2rem;
-}
-
 
 footer {
     min-height: 10vh;
